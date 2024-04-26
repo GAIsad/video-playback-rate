@@ -8,12 +8,12 @@ $(function () {
         $(document).keydown(function (e) {
             try {
                 // Ctrl + `+`
-                if (e.ctrlKey && e.which === 187) {
+                if (e.which === 187) {
                     thatVideoPlayer.playbackRate += 0.5;
                     console.log('current playbackRate=' + thatVideoPlayer.playbackRate);
                 }
                 // Ctrl + `-`
-                if (e.ctrlKey && e.which === 189) {
+                if ( e.which === 189) {
                     thatVideoPlayer.playbackRate -= 0.5;
                     console.log('current playbackRate=' + thatVideoPlayer.playbackRate);
                 }
